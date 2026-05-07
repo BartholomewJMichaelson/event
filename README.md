@@ -735,33 +735,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="section" style="padding-top: 40px;">
-        <div class="container" style="max-width: 1000px;">
-          <div style="
-      position: relative;
-      border-radius: 32px;
-      overflow: hidden;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      backdrop-filter: blur(24px);
-      box-shadow: 0 25px 100px rgba(0,0,0,0.4);
-      aspect-ratio: 16/9;
-    ">
-            <!-- REPLACE THIS WITH YOUR VIDEO EMBED -->
-            <iframe src="https://player.vimeo.com/video/YOUR_VIDEO_ID?autoplay=1&muted=1" title="VSL Video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%; height:100%;"></iframe>
-          </div>
-          <p style="
-      text-align:center;
-      margin-top:28px;
-      font-size:18px;
-      color:rgba(255,255,255,0.65);
-      max-width:700px;
-      margin-left:auto;
-      margin-right:auto;
-    "></p>
-        </div>
       </section>
       <section class="section">
         <div class="section-header">
