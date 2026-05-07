@@ -679,7 +679,7 @@
     <div class="background-glow glow-2"></div>
     <div class="container">
       <nav>
-        <img src="/mnt/data/TNBSGTV 2.0 Logo.png" alt="VATSIM Logo" class="logo">
+        <img src="https://i.postimg.cc/Bng1KyNK/TNBSGTV-2-0-Logo-Backgroundless.png" alt="VATSIM Logo" class="logo">
         <a href="#tickets" class="btn btn-primary"> Reserve Free Ticket </a>
       </nav>
       <section class="hero">
@@ -712,7 +712,7 @@
             </div>
             <a href="#tickets">
               <div class="hero-image">
-                <img src="/mnt/data/livestream-thumbnail.jpg" alt="Live Training Thumbnail">
+                <img src="https://i.postimg.cc/HkZkHC6s/Thumbnail.png" alt="Live Training Thumbnail">
                 <div class="play-overlay">
                   <div class="play-btn">▶</div>
                   <div class="play-label">Bookmark Live Training</div>
@@ -776,12 +776,12 @@
           <p style="font-size: 21px; line-height: 1.8; color: rgba(255,255,255,0.72); margin-bottom: 40px; font-weight: 300;"> It works no matter where you are in life. The first time this event ran, people with completely different backgrounds and experience levels succeeded with it. </p>
           <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:24px;">
             <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:28px; padding:30px;">
-              <div style="height:220px; border-radius:22px; background:rgba(0,0,0,0.25); border:1px dashed rgba(255,255,255,0.15); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); margin-bottom:24px; font-weight:700;"> ADD DAVID TESTIMONIAL IMAGE </div>
+              <img <img src="https://i.postimg.cc/CM8TJnXf/David-Testimonial.png" alt="David Testimonial" style="width:100%; height:auto; display:block; border-radius:22px; margin-bottom:24px;">
               <h4 style="font-size:28px; font-weight:900; margin-bottom:14px; text-transform:uppercase;">David</h4>
               <p style="font-size:18px; line-height:1.7; color:rgba(255,255,255,0.68);"> Didn’t know how to join VATSIM or how to fly on it, while working full time in the tech industry. </p>
             </div>
             <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:28px; padding:30px;">
-              <div style="height:220px; border-radius:22px; background:rgba(0,0,0,0.25); border:1px dashed rgba(255,255,255,0.15); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); margin-bottom:24px; font-weight:700;"> ADD MAX TESTIMONIAL IMAGE </div>
+              <img src="https://i.postimg.cc/5ySsTJ8k/Max-Testimonial.png" alt="Max Testimonial" style="width:100%; height:auto; display:block; border-radius:22px; margin-bottom:24px;">
               <h4 style="font-size:28px; font-weight:900; margin-bottom:14px; text-transform:uppercase;">Max</h4>
               <p style="font-size:18px; line-height:1.7; color:rgba(255,255,255,0.68);"> At just 15 years old, already building aviation knowledge before flight school. </p>
             </div>
@@ -961,7 +961,7 @@
     <footer style="padding: 80px 0 60px; border-top: 1px solid rgba(255,255,255,0.08); margin-top: 80px;">
       <div class="container" style="max-width: 1000px; text-align:center;">
         <div style="display:flex; justify-content:center; margin-bottom:30px;">
-          <img src="/mnt/data/TNBSGTV 2.0 Logo.png" alt="VATSIM Logo" style="height:70px; object-fit:contain; opacity:0.9;">
+          <img src="https://i.postimg.cc/Bng1KyNK/TNBSGTV-2-0-Logo-Backgroundless.png" alt="VATSIM Logo" class="logo">
         </div>
         <div style="display:flex; justify-content:center; gap:24px; flex-wrap:wrap; margin-bottom:30px;">
           <a href="https://www.flightsimweekly.com/privacy" target="_blank" style="color:rgba(255,255,255,0.6); text-decoration:none; font-weight:600;"> Privacy Policy </a>
