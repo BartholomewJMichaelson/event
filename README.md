@@ -820,7 +820,7 @@
             <div class="premium-badge">PREMIUM EXPERIENCE</div>
             <div class="premium-title">First Class Access</div>
             <p class="premium-text"> First Class upgrades your event experience with bonus training, replay access, implementation resources, and post-event support. </p>
-            <a href="https://your-typeform-link.typeform.com/to/xxxxxx" target="_blank" data-tf-popup="xxxxxx" data-tf-size="70" class="btn btn-primary"> Purchase First Class Ticket </a>
+            <a href="https://pay.vatsimmastery.com/b/eVq5kD0xxeWY67RaVMaAw0h" target="_blank" data-tf-popup="xxxxxx" data-tf-size="70" class="btn btn-primary"> Purchase First Class Ticket </a>
           </div>
           <div class="premium-right">
             <div class="perk">
@@ -946,14 +946,14 @@
             <div class="ticket-label muted">STANDARD ACCESS</div>
             <div class="ticket-price">FREE</div>
             <p class="ticket-description"> Access the full live event and learn how future pilots are properly using VATSIM to improve procedures, realism, confidence, and communication. </p>
-            <a href="https://your-typeform-link.typeform.com/to/xxxxxx" target="_blank" class="btn btn-primary"> GET MY FREE TICKET </a>
+            <a href="https://tally.so/r/vGEGA0" target="_blank" class="btn btn-primary"> GET MY FREE TICKET </a>
           </div>
           <div class="ticket-card ticket-premium">
             <div class="recommended-badge">RECOMMENDED</div>
             <div class="ticket-label accent">FIRST CLASS</div>
             <div class="ticket-price">Premium</div>
             <p class="ticket-description"> Get the complete premium experience with VATSIM Mastery 1.0, exclusive resources, replay access, giveaways, and post-event support. </p>
-            <a href="https://your-typeform-link.typeform.com/to/xxxxxx" target="_blank" class="btn btn-secondary" style="width: 100%; background: white; color: black; font-weight: 900;"> Upgrade To First Class </a>
+            <a href="https://pay.vatsimmastery.com/b/eVq5kD0xxeWY67RaVMaAw0h" target="_blank" class="btn btn-secondary" style="width: 100%; background: white; color: black; font-weight: 900;"> Upgrade To First Class </a>
           </div>
         </div>
       </section>
