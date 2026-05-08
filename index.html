@@ -80,6 +80,11 @@
         cursor: pointer;
       }
 
+      .ticket-card .btn {
+        width: 100%;
+        max-width: 100%;
+      }
+
       .btn-primary {
         background: #d68b2a;
         color: black;
@@ -518,11 +523,13 @@
       }
 
       .ticket-price {
-        font-size: 84px;
-        line-height: 1;
+        font-size: clamp(42px, 8vw, 84px);
+        line-height: 0.95;
         font-weight: 900;
-        letter-spacing: -0.06em;
+        letter-spacing: -0.04em;
         margin-bottom: 24px;
+        word-break: break-word;
+        overflow-wrap: break-word;
       }
 
       .ticket-description {
@@ -823,7 +830,8 @@
         }
 
         .ticket-price {
-          font-size: 56px;
+          font-size: clamp(38px, 12vw, 56px);
+          line-height: 1;
         }
 
         .recommended-badge {
