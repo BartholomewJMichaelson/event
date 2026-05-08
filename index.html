@@ -673,6 +673,206 @@
           font-size: 52px;
         }
       }
+
+      /* =========================
+   MOBILE OPTIMISATION
+========================= */
+      @media (max-width: 768px) {
+        body {
+          overflow-x: hidden;
+        }
+
+        .container {
+          padding: 0 18px;
+        }
+
+        nav {
+          flex-direction: column;
+          gap: 20px;
+          padding: 24px 0;
+          text-align: center;
+        }
+
+        .logo {
+          height: 64px;
+          max-width: 100%;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          padding: 20px 0 80px;
+        }
+
+        .eyebrow {
+          width: 100%;
+          justify-content: center;
+          text-align: center;
+          font-size: 11px;
+          padding: 12px 16px;
+          letter-spacing: 0.12em;
+        }
+
+        h1 {
+          font-size: clamp(42px, 13vw, 64px);
+          line-height: 0.95;
+          margin-bottom: 24px;
+          word-break: break-word;
+        }
+
+        h2 {
+          font-size: clamp(36px, 10vw, 52px);
+          line-height: 1;
+        }
+
+        .hero-text,
+        .section-description,
+        .premium-text,
+        .ticket-description {
+          font-size: 17px;
+          line-height: 1.7;
+        }
+
+        .button-row {
+          flex-direction: column;
+          width: 100%;
+          gap: 14px;
+        }
+
+        .btn {
+          width: 100%;
+          text-align: center;
+          padding: 18px 20px;
+          font-size: 15px;
+        }
+
+        .pill-grid {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .pill {
+          padding: 18px;
+          font-size: 15px;
+        }
+
+        .hero-card {
+          border-radius: 28px;
+        }
+
+        .hero-card-top,
+        .hero-card-content,
+        .premium-left,
+        .premium-right,
+        .ticket-card {
+          padding: 24px;
+        }
+
+        .hero-card-title {
+          font-size: 30px;
+          line-height: 1;
+        }
+
+        .feature-box,
+        .perk {
+          align-items: flex-start;
+          padding: 16px;
+          gap: 14px;
+        }
+
+        .feature-number,
+        .perk-check {
+          min-width: 42px;
+          width: 42px;
+          height: 42px;
+          font-size: 16px;
+          border-radius: 12px;
+        }
+
+        .feature-text,
+        .perk p {
+          font-size: 15px;
+          line-height: 1.5;
+        }
+
+        .section {
+          padding: 80px 0;
+        }
+
+        .section-header {
+          margin-bottom: 40px;
+        }
+
+        .card-grid,
+        .ticket-grid,
+        .premium-section {
+          grid-template-columns: 1fr;
+        }
+
+        .info-card {
+          padding: 24px;
+          border-radius: 26px;
+        }
+
+        .info-card h3 {
+          font-size: 24px;
+        }
+
+        .info-card p {
+          font-size: 16px;
+        }
+
+        .ticket-price {
+          font-size: 56px;
+        }
+
+        .recommended-badge {
+          position: static;
+          display: inline-block;
+          margin-bottom: 18px;
+        }
+
+        .faq-item {
+          padding: 20px;
+        }
+
+        .faq-item summary {
+          font-size: 18px;
+          line-height: 1.4;
+          gap: 16px;
+        }
+
+        .faq-item p {
+          font-size: 16px;
+        }
+
+        footer {
+          padding: 60px 0 40px !important;
+        }
+
+        footer .logo {
+          height: 56px;
+        }
+
+        /* FIXES INLINE GRID SECTION */
+        div[style*="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))"] {
+          grid-template-columns: 1fr !important;
+        }
+
+        /* FIXES LARGE INLINE TEXT BLOCK */
+        div[style*="padding: 48px"] {
+          padding: 28px !important;
+        }
+
+        div[style*="padding: 48px"] h3 {
+          font-size: 34px !important;
+          line-height: 1 !important;
+        }
+
+        div[style*="padding: 48px"] p {
+          font-size: 17px !important;
+        }
+      }
     </style>
   </head>
   <body>
@@ -750,7 +950,7 @@
           <p style="font-size: 21px; line-height: 1.8; color: rgba(255,255,255,0.72); margin-bottom: 40px; font-weight: 300;"> It works no matter where you are in life. The first time this event ran, people with completely different backgrounds and experience levels succeeded with it. </p>
           <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:24px;">
             <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:28px; padding:30px;">
-              <img <img src="https://i.postimg.cc/CM8TJnXf/David-Testimonial.png" alt="David Testimonial" style="width:100%; height:auto; display:block; border-radius:22px; margin-bottom:24px;">
+              <img src="https://i.postimg.cc/CM8TJnXf/David-Testimonial.png" alt="David Testimonial" style="width:100%; height:auto; display:block; border-radius:22px; margin-bottom:24px;">
               <h4 style="font-size:28px; font-weight:900; margin-bottom:14px; text-transform:uppercase;">David</h4>
               <p style="font-size:18px; line-height:1.7; color:rgba(255,255,255,0.68);"> He went from having no idea how to join or fly on VATSIM to confidently using the network, all while balancing a full-time career in tech, with our guidance. </p>
             </div>
