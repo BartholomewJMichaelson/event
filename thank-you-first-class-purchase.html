@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '730489540125223');
+
+fbq('track', 'PageView');
+
+/* PURCHASE EVENT */
+fbq('track', 'Purchase', {
+  value: 0.00,
+  currency: 'GBP'
+});
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=730489540125223&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Welcome to First Class | VATSIM Mastery</title>
+
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/XNFsGfBN/VATSIM-Mastery-Logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <meta http-equiv="refresh" content="7;url=https://tally.so/r/WODOAj">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      color:white;
+      overflow-x:hidden;
+      background:
+      radial-gradient(circle at top left, rgba(214, 139, 42, 0.18), transparent 25%),
+      radial-gradient(circle at bottom right, rgba(214, 139, 42, 0.08), transparent 30%),
+      linear-gradient(135deg, #74717a 0%, #605d66 45%, #4b4850 100%);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+
+    .background-glow{
+      position:fixed;
+      width:700px;
+      height:700px;
+      border-radius:50%;
+      background:rgba(214,139,42,0.12);
+      filter:blur(140px);
+      z-index:0;
+      pointer-events:none;
+    }
+
+    .glow-1{ top:-250px; left:-200px; }
+    .glow-2{ bottom:-300px; right:-200px; }
+
+    .card{
+      position:relative;
+      z-index:2;
+
+      width:100%;
+      max-width:900px;
+
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+
+      backdrop-filter:blur(28px);
+
+      border-radius:42px;
+
+      overflow:hidden;
+
+      box-shadow:0 25px 120px rgba(0,0,0,0.4);
+    }
+
+    .top-bar{
+      padding:32px;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      height:72px;
+      object-fit:contain;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+
+      padding:14px 22px;
+
+      border-radius:999px;
+
+      border:1px solid rgba(255,255,255,0.1);
+
+      background:rgba(255,255,255,0.05);
+
+      backdrop-filter:blur(24px);
+
+      font-size:12px;
+      letter-spacing:0.22em;
+      text-transform:uppercase;
+
+      color:rgba(255,255,255,0.75);
+
+      font-weight:700;
+    }
+
+    .dot{
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:#d68b2a;
+      box-shadow:0 0 20px rgba(214,139,42,0.7);
+    }
+
+    .content{
+      padding:70px 60px;
+      text-align:center;
+    }
+
+    h1{
+      font-size:clamp(52px,8vw,110px);
+      line-height:0.9;
+      text-transform:uppercase;
+      font-weight:900;
+      letter-spacing:-0.06em;
+      margin-bottom:30px;
+    }
+
+    .accent{
+      color:#d68b2a;
+      text-shadow:0 0 40px rgba(214,139,42,0.4);
+    }
+
+    .text{
+      font-size:24px;
+      line-height:1.8;
+      color:rgba(255,255,255,0.72);
+      font-weight:300;
+      max-width:760px;
+      margin:0 auto 40px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+
+      text-decoration:none;
+
+      border-radius:20px;
+
+      font-weight:800;
+
+      transition:0.3s ease;
+
+      cursor:pointer;
+
+      background:#d68b2a;
+      color:black;
+
+      padding:22px 38px;
+
+      box-shadow:0 20px 80px rgba(214,139,42,0.35);
+
+      margin-top:20px;
+
+      font-size:16px;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px) scale(1.02);
+    }
+
+    .redirect{
+      margin-top:24px;
+      font-size:14px;
+      color:rgba(255,255,255,0.45);
+      letter-spacing:0.05em;
+    }
+
+    .note{
+      margin-top:40px;
+      font-size:16px;
+      color:rgba(255,255,255,0.6);
+      line-height:1.7;
+      max-width:700px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    @media (max-width:900px){
+
+      .content{
+        padding:50px 28px;
+      }
+
+      .btn{
+        width:100%;
+      }
+
+      .logo{
+        height:60px;
+      }
+
+      .text{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="background-glow glow-1"></div>
+<div class="background-glow glow-2"></div>
+
+<div class="card">
+
+  <div class="top-bar">
+
+    <img
+      src="https://i.postimg.cc/Bng1KyNK/TNBSGTV-2-0-Logo-Backgroundless.png"
+      class="logo"
+      alt="VATSIM Mastery Logo"
+    >
+
+    <div class="badge">
+      <div class="dot"></div>
+      FIRST CLASS CONFIRMED
+    </div>
+
+  </div>
+
+  <div class="content">
+
+    <h1>
+      WELCOME TO <span class="accent">FIRST CLASS.</span>
+    </h1>
+
+    <p class="text">
+      Your upgrade has been successfully processed.
+    </p>
+
+    <p class="text" style="font-size:20px;">
+      You now have access to the full First Class system for
+      <strong>The No Bullsh*t Guide to VATSIM 2.0</strong>.
+    </p>
+
+    <a
+      href="https://tally.so/r/WODOAj"
+      class="btn"
+      target="_blank"
+    >
+      ACCESS YOUR FIRST CLASS PERKS
+    </a>
+
+    <div class="redirect">
+      Redirecting automatically in 7 seconds...
+    </div>
+
+    <p class="note">
+      You’ll now be taken to the VATSIM Mastery Community onboarding form where you’ll receive access to your training system, Discord community, and all First Class resources.<br><br>
+      Make sure to complete it so we can unlock everything for you instantly.
+    </p>
+
+  </div>
+
+</div>
+
+</body>
+</html>
