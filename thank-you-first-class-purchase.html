@@ -18,11 +18,18 @@ fbq('init', '730489540125223');
 
 fbq('track', 'PageView');
 
-/* PURCHASE EVENT */
-fbq('track', 'Purchase', {
-  value: 12.22,
-  currency: 'GBP'
-});
+/* PURCHASE EVENT WITH REFRESH PROTECTION */
+if (!sessionStorage.getItem('purchase_fired')) {
+
+  fbq('track', 'Purchase', {
+    value: 12.22,
+    currency: 'GBP',
+    transaction_id: 'FIRSTCLASS_' + Date.now()
+  });
+
+  sessionStorage.setItem('purchase_fired', 'true');
+}
+
 </script>
 
 <noscript>
@@ -30,7 +37,7 @@ fbq('track', 'Purchase', {
 src="https://www.facebook.com/tr?id=730489540125223&ev=PageView&noscript=1"/>
 </noscript>
 <!-- End Meta Pixel Code -->
-
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
