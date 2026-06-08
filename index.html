@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The No Bullsh*t Guide to VATSIM 2.0 — Replay Available</title>
+<title>The Event Has Ended</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,7 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+
 body{
 font-family:'Inter',sans-serif;
 background:
@@ -19,6 +20,8 @@ radial-gradient(circle at bottom right, rgba(214,139,42,.08), transparent 30%),
 linear-gradient(135deg,#74717a 0%,#605d66 45%,#4b4850 100%);
 color:#fff;
 min-height:100vh;
+display:flex;
+flex-direction:column;
 overflow-x:hidden;
 }
 
@@ -39,6 +42,7 @@ pointer-events:none;
 max-width:1280px;
 margin:0 auto;
 padding:0 32px;
+width:100%;
 position:relative;
 z-index:2;
 }
@@ -53,189 +57,26 @@ padding:40px 0;
 height:90px;
 }
 
-.hero{
-display:grid;
-grid-template-columns:1.05fr .95fr;
-gap:80px;
+.main-content{
+flex:1;
+display:flex;
 align-items:center;
-padding:40px 0 120px;
+justify-content:center;
+text-align:center;
+padding:40px 20px;
 }
 
-.eyebrow{
-display:inline-flex;
-align-items:center;
-gap:12px;
-padding:14px 22px;
-border-radius:999px;
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.1);
-backdrop-filter:blur(24px);
-margin-bottom:28px;
-font-size:13px;
-font-weight:800;
-letter-spacing:.2em;
-}
-
-.eyebrow-dot{
-width:10px;
-height:10px;
-border-radius:50%;
-background:#d68b2a;
-}
-
-h1{
-font-size:clamp(64px,9vw,120px);
-line-height:.9;
+.message h1{
+font-size:clamp(48px,8vw,100px);
 font-weight:900;
-letter-spacing:-.06em;
+letter-spacing:-0.05em;
 text-transform:uppercase;
-margin-bottom:32px;
+margin-bottom:20px;
 }
 
-.accent{color:#d68b2a}
-.muted{color:rgba(255,255,255,.55)}
-
-.hero-text{
-font-size:24px;
-line-height:1.7;
-color:rgba(255,255,255,.75);
-margin-bottom:40px;
-max-width:700px;
-}
-
-.button-row{
-display:flex;
-gap:18px;
-flex-wrap:wrap;
-}
-
-.btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-padding:20px 34px;
-border-radius:20px;
-font-weight:800;
-text-decoration:none;
-transition:.3s;
-}
-
-.btn:hover{transform:translateY(-2px) scale(1.02)}
-
-.btn-primary{
-background:#d68b2a;
-color:#000;
-box-shadow:0 20px 80px rgba(214,139,42,.35);
-}
-
-.btn-secondary{
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.1);
-color:#fff;
-}
-
-.hero-card{
-border-radius:40px;
-overflow:hidden;
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.1);
-backdrop-filter:blur(28px);
-box-shadow:0 25px 120px rgba(0,0,0,.45);
-}
-
-.hero-card-top{
-padding:32px;
-border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.hero-card-label{
-font-size:12px;
-font-weight:800;
-letter-spacing:.3em;
-opacity:.6;
-margin-bottom:10px;
-}
-
-.hero-card-title{
-font-size:42px;
-font-weight:900;
-line-height:.95;
-}
-
-.hero-image{
-position:relative;
-aspect-ratio:16/9;
-overflow:hidden;
-}
-
-.hero-image img{
-width:100%;
-height:100%;
-object-fit:cover;
-filter:brightness(.75);
-}
-
-.play-overlay{
-position:absolute;
-inset:0;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-gap:16px;
-}
-
-.play-btn{
-width:80px;
-height:80px;
-border-radius:50%;
-background:#d68b2a;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
-color:#000;
-}
-
-.play-label{
-font-size:14px;
-font-weight:900;
-letter-spacing:.15em;
-text-transform:uppercase;
-}
-
-.hero-card-content{
-padding:32px;
-display:flex;
-flex-direction:column;
-gap:18px;
-}
-
-.feature-box{
-display:flex;
-align-items:center;
-gap:18px;
-padding:22px;
-border-radius:24px;
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.08);
-}
-
-.feature-number{
-min-width:52px;
-height:52px;
-border-radius:18px;
-background:#d68b2a;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:900;
-color:#000;
-}
-
-.feature-text{
-font-size:18px;
-font-weight:700;
+.message p{
+font-size:20px;
+color:rgba(255,255,255,.7);
 }
 
 footer{
@@ -243,16 +84,22 @@ text-align:center;
 padding:60px 20px;
 border-top:1px solid rgba(255,255,255,.08);
 color:rgba(255,255,255,.5);
+position:relative;
+z-index:2;
 }
 
 @media(max-width:900px){
-.hero{grid-template-columns:1fr}
-h1{font-size:56px}
 .container{padding:0 20px}
-.button-row{flex-direction:column}
-.btn{width:100%}
+.message h1{font-size:48px}
 }
 </style>
+
+<script>
+setTimeout(function() {
+    window.location.href = "https://vatsimmastery.com";
+}, 5000);
+</script>
+
 </head>
 
 <body>
@@ -263,100 +110,16 @@ h1{font-size:56px}
 <div class="container">
 
 <nav>
-<img src="https://i.postimg.cc/Bng1KyNK/TNBSGTV-2-0-Logo-Backgroundless.png" class="logo">
+<img src="https://i.postimg.cc/Bng1KyNK/TNBSGTV-2-0-Logo-Backgroundless.png" class="logo" alt="Logo">
 </nav>
 
-<section class="hero">
-
-<div>
-<div class="eyebrow">
-<div class="eyebrow-dot"></div>
-EVENT COMPLETE • REPLAY AVAILABLE
 </div>
 
-<h1>
-The No Bullsh*t Guide To
-<span class="accent">VATSIM 2.0</span>
-<span class="muted">Has Ended.</span>
-</h1>
-
-<p class="hero-text">
-Thank you to everyone who attended the live event.
-If you missed it, or you'd like to watch it again,
-the full replay is now available.
-</p>
-
-<div class="button-row">
-<a href="https://joincayton.com" target="_blank" class="btn btn-primary">
-TAKE YOUR NEXT STEP
-</a>
-
-<a href="https://youtube.com/live/Xfk5O9hrXao?feature=share" target="_blank" class="btn btn-secondary">
-WATCH THE REPLAY
-</a>
-</div>
-
-</div>
-
-<div>
-
-<div class="hero-card">
-
-<div class="hero-card-top">
-<div class="hero-card-label">FULL EVENT REPLAY</div>
-<div class="hero-card-title">
-The No Bullsh*t Guide To VATSIM 2.0
-</div>
-</div>
-
-<a href="https://youtube.com/live/Xfk5O9hrXao?feature=share" target="_blank" style="text-decoration:none;">
-
-<div class="hero-image">
-
-<img
-src="https://i.postimg.cc/HkZkHC6s/Thumbnail.png"
-alt="VATSIM 2.0 Replay Thumbnail">
-
-<div class="play-overlay">
-<div class="play-btn">▶</div>
-<div class="play-label">Watch Replay</div>
-</div>
-
-</div>
-
-</a>
-
-<div class="hero-card-content">
-
-<div class="feature-box">
-<div class="feature-number">✓</div>
-<div class="feature-text">
-Learn how serious sim pilots actually use VATSIM
-</div>
-</div>
-
-<div class="feature-box">
-<div class="feature-number">✓</div>
-<div class="feature-text">
-Improve confidence with ATC communication
-</div>
-</div>
-
-<div class="feature-box">
-<div class="feature-number">✓</div>
-<div class="feature-text">
-Understand A -> B flying on the network and how to make use of it as an aspiring Pilot
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
+<div class="main-content">
+    <div class="message">
+        <h1>The Event Has Ended</h1>
+        <p>You will be redirected in 5 seconds...</p>
+    </div>
 </div>
 
 <footer>
